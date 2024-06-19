@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f9;
+  padding: 12px 50px;
+}
+.header-btn {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.logo img {
+  width: 90px;
+  height: 50px;
+}
+.navbar {
+  display: flex;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: black;
+  font-weight: 500;
+}
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: green;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.5s;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  z-index: 10001;
+}
+.header-btn a {
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.header-btn .log-in {
+  background-color: #474fa0;
+  color: white;
+  border-radius: 0.5rem;
+}
+.header-btn .log-in:hover {
+  background-color: #031867;
+}
+.header-btn .sign-up:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f4f4;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+.slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  margin-left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+}
+.wholepage {
+  overflow-y: scroll;
+}
